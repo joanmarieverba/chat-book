@@ -10,10 +10,9 @@ var errorPage = {
 var errorMsg = {
     paddingTop: "50px",
     textAlign: "center",
-    fontFamily: 'Verdana',
     color: "yellow",
-    WebkitTransition: 'all',
-    msTransition: 'all'
+    fontFamily: "Bungee",
+    webkitTextStroke: "1px black",
  };
 
 export default class NoMatch extends Component {
