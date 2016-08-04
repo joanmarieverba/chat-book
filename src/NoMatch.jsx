@@ -20,7 +20,7 @@ export default class NoMatch extends Component {
   render() {
     return (
       <div style={errorPage}>
-        <h1 style={errorMsg}>OOPS!</h1>
+        <h2 style={errorMsg}>Not a chat page, but feel free to admire the background</h2>
         <h4 style={errorMsg}>You probably want to <a href="/">start over</a></h4>
       </div>
     );

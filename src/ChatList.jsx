@@ -5,12 +5,8 @@ import { Button, Alert, Spinner, Row, Col, Form, FormField, FormInput } from 'el
 import { browserHistory } from 'react-router';
 
 var chatStyle = {
-    // display: "inline-block",
-    // marginTop: "50px",
-    // marginLeft: '50px',
-    // fontFamily: "Righteous",
-    // fontSize: "14px",
-    // padding: '15px',
+    marginTop: "30px",
+    marginBottom: '50px',
     WebkitTransition: 'all',
     msTransition: 'all'
  };

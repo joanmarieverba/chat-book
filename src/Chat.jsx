@@ -14,11 +14,16 @@ var chatpageStyle = {
  };
 
  var boxheader = {
-   paddingLeft: "150px",
+   paddingLeft: "250px",
+   paddingRight: "200px",
    paddingTop: "20px",
    paddingBottom: "40px",
    display: "inline-block",
    margin: "0 auto",
+  //  fontFamily: "Vast Shadow",
+   fontFamily: "Bungee",
+   fontSize: "48px",
+   webkitTextStroke: "1px black",
    color: "yellow",
  }
 

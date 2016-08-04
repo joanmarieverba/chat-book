@@ -13,7 +13,8 @@ var topBanner = {
    width : "100%",
    position: "fixed",
    textAlign: "center",
-   fontFamily: 'Bangers',
+   fontFamily: 'Orbitron',
+   color: "yellow",
    fontSize: "36px",
    top: "0",
    left : "0",
@@ -25,24 +26,25 @@ var topBanner = {
 
 var instructions = {
   paddingTop: "75px",
+  paddingLeft: "50px",
+  paddingRight: "50px",
+  fontFamily: 'Bungee',
+  color: "lightgreen",
   textAlign: "center",
   display: "inline-block",
-  fontFamily: "Arial",
-  fontSize: "12px",
+  fontSize: "32px",
   fontWeight: "bold",
-  // backgroundColor: "white",
-
+  webkitTextStroke: "1px black",
 }
 
 var inputBox = {
   paddingTop: "100px",
-  textAlign: "center",
   display: "inline-block",
   fontFamily: "Arial",
   fontSize: "12px",
   fontWeight: "bold",
-  // backgroundColor: "white",
-  // border: "2px solid lightblue",
+  margin: "0 auto",
+  paddingLeft: "400px",
 }
 
 export default class LoginPage extends Component {
@@ -74,7 +76,8 @@ export default class LoginPage extends Component {
       <div style={logInPageStyle} >
       <span style={topBanner}>Astronomy Observers Chat</span>
       <span style={instructions} > Enter your nickname to begin and click the Enter button: </span>
-      <form onSubmit={this.handleSubmitButtonClick.bind(this)}>  //submit responds to return or click
+{/* //submit responds to return or click */}
+      <form onSubmit={this.handleSubmitButtonClick.bind(this)}>
         <label  style={inputBox}>
           <input type="text" placeholder="Enter nickname" onChange={this.handleSearchInputChange.bind(this)} />
           <input type="submit" value="Enter" />

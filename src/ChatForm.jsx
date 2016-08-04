@@ -21,19 +21,27 @@ var observationsBox = {
    width: "75px",
    height: "30px",
    marginRight: "130px",
-   float: "right",
+  //  float: "right",
  }
 
 var display = {
   marginLeft: "130px",
-  color: "white",
+  color: "darkgoldenrod",
+  fontWeight: "bold",
+  fontFamily: "Syncopate",
 }
 
 var gmtdisplay = {
-  marginLeft: "100px",
-  marginRight: "130px",
+  marginLeft: "250px",
+  // marginRight: "130px",
   float: "right",
-  color: "white",
+  fontWeight: "bold",
+  color: "darkgoldenrod",
+  fontFamily: "Syncopate",
+  textAlign: "right",
+  display: "inline-block",
+  width: "150px",
+  // webkitTextStroke: "1px black",
 }
 
 export default class ChatForm extends Component {
@@ -74,7 +82,7 @@ export default class ChatForm extends Component {
 
                 <Row>
                     <h2 style={display}> Nickname: {this.props.nickname}</h2>
-                    <h2 style={gmtdisplay}>GMT </h2>
+                    <h2 style={gmtdisplay}>GMT: </h2>
                     <FormInput  style={gmtbutton} type="text" placeholder="GMT" name="GMT" onChange={this.handleGmtChange.bind(this)} />
                 </Row>
                 <Row>
