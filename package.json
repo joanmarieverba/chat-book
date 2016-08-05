@@ -20,12 +20,17 @@
   },
   "homepage": "https://github.com/joanmarieverba/chat#readme",
   "dependencies": {
+    "css-loader": "^0.23.1",
     "elemental": "^0.6.0",
+    "file-loader": "^0.9.0",
     "hjs-webpack": "^8.3.0",
+    "postcss-loader": "^0.9.1",
     "react": "^15.3.0",
     "react-addons-css-transition-group": "^15.3.0",
     "react-dom": "^15.3.0",
-    "react-router": "^2.6.1"
+    "react-router": "^2.6.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7"
   },
   "devDependencies": {
     "babel-core": "^6.11.4",
