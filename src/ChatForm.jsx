@@ -25,14 +25,14 @@ var observationsBox = {
  }
 
 var display = {
-  marginLeft: "130px",
+  marginLeft: "170px",
   color: "darkgoldenrod",
   fontWeight: "bold",
   fontFamily: "Syncopate",
 }
 
 var gmtdisplay = {
-  marginLeft: "250px",
+  marginLeft: "444px",
   // marginRight: "130px",
   float: "right",
   fontWeight: "bold",
@@ -41,7 +41,7 @@ var gmtdisplay = {
   textAlign: "right",
   display: "inline-block",
   width: "150px",
-  // webkitTextStroke: "1px black",
+
 }
 
 export default class ChatForm extends Component {

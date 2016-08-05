@@ -6,7 +6,7 @@ import { browserHistory } from 'react-router';
 
 
 var chatpageStyle = {
-    backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/07/space-681635_1920.jpg")',
+    backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/08/fbadc59ed7bd7022_1920.jpg")',
     width: "100%",
     minHeight: "100%",
     WebkitTransition: 'all',
@@ -14,8 +14,8 @@ var chatpageStyle = {
  };
 
  var boxheader = {
-   paddingLeft: "250px",
-   paddingRight: "200px",
+   paddingLeft: "400px",
+   paddingRight: "300px",
    paddingTop: "20px",
    paddingBottom: "40px",
    display: "inline-block",

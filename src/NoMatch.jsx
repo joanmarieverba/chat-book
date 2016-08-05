@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import globalStyles from "./assets/styles/global.css";
 
 var errorPage = {
-    backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/08/stars-half-blue.jpg")',
+    backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/08/spatiul-cosmic.jpg")',
    //  position: "fixed",
     width: "100%",
     minHeight: "100%",
