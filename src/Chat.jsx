@@ -14,8 +14,8 @@ var chatpageStyle = {
  };
 
  var boxheader = {
-   paddingLeft: "400px",
-   paddingRight: "300px",
+   paddingLeft: "200px",
+   paddingRight: "150px",
    paddingTop: "20px",
    paddingBottom: "40px",
    display: "inline-block",

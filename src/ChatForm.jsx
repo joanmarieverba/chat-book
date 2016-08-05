@@ -21,7 +21,7 @@ var observationsBox = {
    width: "75px",
    height: "30px",
    marginRight: "130px",
-  //  float: "right",
+   float: "right",
  }
 
 var display = {
@@ -33,10 +33,10 @@ var display = {
 
 var gmtdisplay = {
   marginLeft: "444px",
-  // marginRight: "130px",
+  marginRight: "130px",
   float: "right",
   fontWeight: "bold",
-  color: "darkgoldenrod",
+  color: "purple",
   fontFamily: "Syncopate",
   textAlign: "right",
   display: "inline-block",
@@ -81,9 +81,13 @@ export default class ChatForm extends Component {
           <Form type="inline" onSubmit={this.handleSendButtonClick.bind(this)}>
 
                 <Row>
+                  <Col sm="1/2">
                     <h2 style={display}> Nickname: {this.props.nickname}</h2>
+                  </Col>
+                  <Col sm="1/2">
                     <h2 style={gmtdisplay}>GMT: </h2>
                     <FormInput  style={gmtbutton} type="text" placeholder="GMT" name="GMT" onChange={this.handleGmtChange.bind(this)} />
+                  </Col>
                 </Row>
                 <Row>
                     <FormInput style={observationsBox} placeholder="Record observations here" multiline onChange={this.handleMessageChange.bind(this)} />
