@@ -15,13 +15,14 @@ var chatStyle = {
 export default class ChatList extends Component {
 
 
+
   render() {
     console.log("chatlist ", this.props.messageArray);
     return (
       <div style={chatStyle}>
       {this.props.messageArray.map((item) => {
         return (
-          <ChatItem nickname={item.nickname} gmt={item.gmt} message={item.message}/>
+          <ChatItem nickname={item.nickname} title={item.title} message={item.message} array={this.props.messageArray}  key={item.id}/>      
         )})}
       </div>
     )

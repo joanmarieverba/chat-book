@@ -4,7 +4,8 @@ import { browserHistory } from 'react-router';
     // browserHistory.push('/chat/nickname')
 
 var logInPageStyle = {
-  backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/07/cityscape7.jpg")',
+  // backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/07/cityscape7.jpg")',
+  backgroundColor: "skyblue",
   width: '100%',
   minHeight: '100%',
 }
@@ -14,12 +15,12 @@ var topBanner = {
    position: "fixed",
    textAlign: "center",
    fontFamily: 'Orbitron',
-   color: "yellow",
+   color: "skyblue",
    fontSize: "36px",
    top: "0",
    left : "0",
    border: "3px solid #73AD21",
-   backgroundColor: "red",
+   backgroundColor: "orangered",
    WebkitTransition: 'all',
    msTransition: 'all'
  }
@@ -74,7 +75,7 @@ export default class LoginPage extends Component {
 
     return (
       <div style={logInPageStyle} >
-      <span style={topBanner}>Astronomy Observers Chat</span>
+      <span style={topBanner}>This is a chat application for book readers</span>
       <span style={instructions} > Enter your nickname to begin and click the Enter button: </span>
 {/* //submit responds to return or click */}
       <form onSubmit={this.handleSubmitButtonClick.bind(this)}>

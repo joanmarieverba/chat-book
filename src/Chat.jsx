@@ -6,7 +6,8 @@ import { browserHistory } from 'react-router';
 
 
 var chatpageStyle = {
-    backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/08/fbadc59ed7bd7022_1920.jpg")',
+    // backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/08/fbadc59ed7bd7022_1920.jpg")',
+    backgroundColor: "green",
     width: "100%",
     minHeight: "100%",
     WebkitTransition: 'all',
@@ -20,10 +21,9 @@ var chatpageStyle = {
    paddingBottom: "40px",
    display: "inline-block",
    margin: "0 auto",
-  //  fontFamily: "Vast Shadow",
-   fontFamily: "Bungee",
+   fontFamily: "Diplomata",
    fontSize: "48px",
-   webkitTextStroke: "1px black",
+  //  webkitTextStroke: "1px black",
    color: "yellow",
  }
 
@@ -35,10 +35,10 @@ export default class Chat extends Component {
     }
   }
 
-  handleNewMsg(gmt, message) {   //method
-    console.log ("chatgmt ", gmt, "chatmsg ", message, this);
+  handleNewMsg(title, message) {   //method
+    console.log ("chattitle ", title, "chatmsg ", message, this);
     var newMessageArray = Array.prototype.slice.call(this.state.messageArray);
-    newMessageArray.push({gmt: gmt, message: message, nickname: this.props.params.nickname});
+    newMessageArray.push({title: title, message: message, nickname: this.props.params.nickname});
     this.setState({messageArray: newMessageArray});
   }
 
@@ -47,7 +47,7 @@ export default class Chat extends Component {
       // console.log("nickname:", {this.props.nickname});
       return (
         <div style={chatpageStyle}>
-        <h1 style={boxheader}>Welcome to the Astronomy Chat</h1>
+        <h1 style={boxheader}>Welcome to the Book Chat</h1>
         <ChatList nickname={this.props.params.nickname} messageArray={this.state.messageArray} />
         <ChatForm nickname={this.props.params.nickname} onNewMsg={this.handleNewMsg.bind(this)} />
         </div>
