@@ -26,7 +26,7 @@ var commentsBox = {
 
 var display = {
   marginLeft: "170px",
-  color: "darkgoldenrod",
+  color: "purple",
   fontWeight: "bold",
   fontFamily: "Syncopate",
 }

@@ -6,8 +6,8 @@ import { browserHistory } from 'react-router';
 
 
 var chatpageStyle = {
-    // backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/08/fbadc59ed7bd7022_1920.jpg")',
-    backgroundColor: "green",
+    backgroundImage: 'url("http://jmvtestsite.com/wp-content/uploads/2016/08/folder-1049826_1280.jpg")',
+    // backgroundColor: "green",
     width: "100%",
     minHeight: "100%",
     WebkitTransition: 'all',
@@ -24,7 +24,7 @@ var chatpageStyle = {
    fontFamily: "Diplomata",
    fontSize: "48px",
   //  webkitTextStroke: "1px black",
-   color: "yellow",
+   color: "purple",
  }
 
 export default class Chat extends Component {
