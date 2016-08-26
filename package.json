@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "hjs-dev-server",
-    "build": "webpack"
+    "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joanmarieverba/chat.git"
+    "url": "git+https://github.com/joanmarieverba/chat-book.git"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/joanmarieverba/chat/issues"
   },
-  "homepage": "https://github.com/joanmarieverba/chat#readme",
+  "homepage": "https://github.com/joanmarieverba/chat-book#readme",
   "dependencies": {
     "css-loader": "^0.23.1",
     "elemental": "^0.6.0",

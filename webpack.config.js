@@ -1,7 +1,7 @@
-
+var webpack = require('webpack');
 var getConfig = require('hjs-webpack')
 
-module.exports = getConfig({
+var config = getConfig({
   // entry point for the app
   in: 'src/App.jsx',
 
@@ -16,7 +16,28 @@ module.exports = getConfig({
   // get a fresh folder. Usually you want this
   // but since it's destructive we make it
   // false by default
-  clearBeforeBuild: '!(images|favicon.ico)'
-})
+  clearBeforeBuild: '!(images|favicon.ico)',
 
+  html: function (context) {
+    if (process.env.NODE_ENV === "production"){
+      return {
+        'index.html': context.defaultTemplate({
+          head: '<base href="/chat-book/" />'
+        })
+      }
+    }
+    return {
+      'index.html': context.defaultTemplate({
+        head: '<base href="/" />'
+      })
+    }
+  }
+});
 
+config.plugins.push(
+  new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+  })
+);
+
+module.exports = config;
